@@ -6,7 +6,7 @@ import cv2
 
 # this is to read the image and put it in 1D nparray
 add=0
-img = cv2.imread('mama.jpeg', 0)
+img = cv2.imread('lena.png', 0)
 data = np.array(img)
 print(data)
 data = np.array(img).flatten()
@@ -129,4 +129,4 @@ print(data, len(data))
 
 print(decoded_img.astype(int).reshape(img.shape[0], img.shape[1]))
 
-cv2.imwrite('output_mama.png', decoded_img.astype(int).reshape(img.shape[0], img.shape[1]))
+cv2.imwrite('output_lena.png', decoded_img.astype(int).reshape(img.shape[0], img.shape[1]))
